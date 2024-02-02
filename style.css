@@ -2,11 +2,12 @@ body{
     font-family: Tahoma, Verdana, sans-serif;
 }
 body::-webkit-scrollbar {
-    width: 2px;
+    width: 0.5vw;
   }
  body::-webkit-scrollbar-track {
     border-radius: 5px;
     cursor: pointer;
+    
   }
 
   body::-webkit-scrollbar-thumb {
@@ -15,11 +16,13 @@ body::-webkit-scrollbar {
   }
 header{
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     /* background-image: url(img/img1.jpg); */
     background-color: #F78361;
     border: 1px solid rgb(0, 0, 0);
     background-repeat: no-repeat;
+    transition: all;
+    align-items: center;
 }
 .header-heading-div{
     background-color: #2f2d23;
@@ -28,10 +31,12 @@ header{
     height: 90px;
     border: 1px solid  #F78361;
     box-shadow:  0 0px 20px 0   #F78361;
+    font-family: cursive;
 }
 .header-heading-div h1{
     text-align: center;
     color:white;
+    text-shadow: 5px 5px 5px #F78361;
 }
 #main-nav{
     width: 100%;
@@ -40,23 +45,27 @@ header{
  align-items: center;
 }
 #main-div-1{
-    margin-top: 50px;
-    margin-left: 180px;
+    margin-top: 20px;
+    margin-left: 20vw;
     border: 1px solid black;
-    width: 70%;
+    width: 60%;
     height: 80vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.759), 0 6px 20px 0 rgba(0, 0, 0, 0.759);
     background-color: #2f2d23;
    border-radius: 5px;
    overflow-y: scroll;
-   overflow-x: hidden;
+   overflow-x: scroll;
+   
+  
 }
 #main-div-1::-webkit-scrollbar {
     width: 2px;
+    height: 2px;
   }
   #main-div-1::-webkit-scrollbar-track {
     border-radius: 5px;
     cursor: pointer;
+    scroll-behavior: smooth;
   }
 
   #main-div-1::-webkit-scrollbar-thumb {
@@ -64,10 +73,10 @@ header{
     border-radius: 10px;
   }
   #main-div{
-    margin-top: 50px;
-    margin-left: 180px;
+    margin-top: 20px;
+    margin-left: 20vw;
     border: 3px solid black;
-    width: 70%;
+    width: 60%;
     height: 80vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.397), 0 6px 20px 0 rgba(0, 0, 0, 0.397);
    background-color:#2f2d23;
@@ -81,7 +90,7 @@ header{
     width: 100%;
     height: 230px;
     /* border: 1px solid red; */
-    display: inline-flex;
+    display: inline-flex; 
 }
 .profile-main-div{
     margin-top: 19px;
@@ -93,6 +102,7 @@ header{
 }
 .profile-main-div:hover{
     box-shadow:  0 0px 20px 0  rgba(0, 0, 0, 0.615);
+    cursor: pointer;
   }
 .a{
     width: 100%;
@@ -151,10 +161,11 @@ header{
     box-shadow:  0 0px 20px 0   #F78361;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    cursor: pointer;
 }
 .main-info-div{
     width: 80%;
-    height: 500px;
+    height: 480px;
     border: 3px solid black;
     margin-left: 80px;
     border-radius: 10px;
@@ -198,72 +209,74 @@ header{
 }
 .bb{
     width: 100%;
-    height: 447px;
+    height: 430px;
     /* border: 1px solid red; */
     display: inline-flex;
+    
 }
 .info-name-box{
-width: 30%;
-height: 435px;
+width: 35%;
+height: 425px;
 /* border: 1px solid red; */
 border-top: 2px solid  black;
 }
 .info-data-box{
     width: 70%;
-    height: 435px;
+    height: 425px;
     border-top: 2px solid  black;
   
 }
 .info-name{
     width: 60%;
-    height: 400px;
+    height: 380px;
     border: 1px solid  black;
     margin-top: 10px;
     margin-left: 40%;
-    background-color:  #4E586E
+    background-color:  #3b3d43;
 }
 .info-data{
     width: 80%;
-    height: 400px;
+    height: 380px;
     border: 1px solid  black;
     margin-top: 10px;
     margin-right: 20%;
-    background-color:  #4E586E
+    background-color:  #3b3d43;
 }
 .info-name-list{
     color: white;
-    font-size: 10px;
+    font-size: 7px;
     border-bottom: 1px solid  black;
 
    
 }
 .info-name-list-about{
     width: 100%;
-    height: 130px;
+    height: 110px;
     color:white;
-    font-size: 10px;
+    font-size: 8px;
 }
 .info-data-list{
    
-    color:black;
-    font-size: 10px;
+    color:rgb(255, 244, 244);
+    font-size: 8px;
     border-bottom: 1px solid black;
 }
 .info-data-list h1{
-     margin-left: 10px;
+     margin-left: 1vw;
      text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.759);
 }
 .info-name-list h1{
     margin-left: 10px;
+    font-size: 12px;
 }
 .info-name-list-about h1{
-    margin-left: 10px;
+    margin-left: 8px;
 }
 .info-data-list-about{
     width: 100%;
-    height: 130px;
-    color: black;
-    font-size: 15px;
+    height: 17vh;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
     text-align: justify;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -288,20 +301,24 @@ border-top: 2px solid  black;
 }
 .info-data-list a{
     text-decoration: none;
-    color: rgba(23, 54, 212, 0.918);
+    color: rgba(212, 23, 23, 0.552);
 }
 .info-data-list a:hover{
     color: rgb(238, 238, 238);
     text-decoration: underline;
+    cursor: pointer;
 }
 .back-btn button{
     width: 30%;
     height: 20px;
-    border: 1px solid black;
-    background-color: black;
-    color: white;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 14, 14);
 }
 .back-btn {
-    margin-left: 50px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 40px;
+    transition: all;
+
 
 }
